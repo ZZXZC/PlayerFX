@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #202124;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox fx:id="mainVbox" alignment="TOP_CENTER" layoutX="17.0" layoutY="17.0" prefHeight="367.0" prefWidth="567.0" spacing="20.0" style="-fx-background-color: #121212;" stylesheets="@application.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="579.0" text="PlayerFX" textFill="#e8eaed" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <StackPane fx:id="dropOff" onDragDropped="#dragDropped" onDragExited="#dragExited" onDragOver="#dragOver" prefHeight="200.0" prefWidth="567.0">
+               <children>
+                  <Label fx:id="dragtext" alignment="CENTER" prefHeight="200.0" prefWidth="567.0" style="-fx-background-color: #161f30;" text="DRAG AND DROP AN EXCEL FILE HERE" textFill="#9aa0a6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <Button fx:id="browseButton" mnemonicParsing="false" onAction="#browse" prefHeight="41.0" prefWidth="115.0" styleClass="browseButton" text="Browse" textFill="#9aa0a6">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

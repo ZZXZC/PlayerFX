@@ -1,0 +1,45 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*browse button properties*/
+.button {
+    -fx-background-color: #162238;
+    -fx-text-fill: #9aa0a6;     
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 4px;  
+    -fx-padding: 8px 24px; 
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #1f304e;
+}
+.button:armed {
+    -fx-background-color: #0f1929;
+}
+
+.list-cell {
+    -fx-background-color: #121927;
+    -fx-text-fill: #9aa0a6;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+}
+.list-cell:hover {
+    -fx-background-color: #1c273b;
+}
+.list-cell:selected {
+    -fx-background-color: #223049;
+    -fx-text-fill: #8ab4f8;
+}
+.slider .track {
+    -fx-background-color: #383838;
+    -fx-background-radius: 4px;
+}
+
+.slider .thumb {
+    -fx-background-color: #e8eaed;
+    -fx-background-radius: 50%;
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #2b7fff; 
+    -fx-cursor: hand;
+}

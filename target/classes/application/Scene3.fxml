@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #202124;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Screne3Conntroller">
+   <children>
+      <VBox fx:id="mainBox" alignment="TOP_CENTER" layoutX="17.0" layoutY="17.0" prefHeight="367.0" prefWidth="567.0" spacing="15.0" style="-fx-background-color: #121212;" stylesheets="@application.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="567.0" text="Choose a Song" textFill="#e8eaed" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <ListView fx:id="songList" prefHeight="243.0" prefWidth="567.0" style="-fx-background-color: #161f30;" />
+            <HBox fx:id="durationBar" alignment="CENTER" prefHeight="114.0" prefWidth="567.0" spacing="10.0">
+               <children>
+                  <Label fx:id="startDuration" text="0:00:00" textFill="#cccccc" />
+                  <Slider fx:id="duration" prefHeight="14.0" prefWidth="460.0" />
+                  <Label fx:id="endDuration" text="0:00:00" textFill="#cccccc" />
+               </children>
+            </HBox>
+            <HBox fx:id="controlsBar" alignment="CENTER" prefHeight="146.0" prefWidth="567.0" spacing="15.0">
+               <children>
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#play" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: #16382a;" text="⏵" />
+                  <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stop" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: #572828;" text="⏹" />
+                  <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pause" text="⏸" />
+                  <Button fx:id="backButton" lineSpacing="15.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="83.0" text="Back">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Label prefHeight="47.0" prefWidth="16.0" text="-" textFill="#e8eaed">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="Volume" prefHeight="14.0" prefWidth="124.0" />
+                  <Label text="+" textFill="#e8eaed">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
