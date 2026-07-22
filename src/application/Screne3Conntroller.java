@@ -14,7 +14,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class Screne3Conntroller implements Initializable{
+public class Screne3Conntroller{
 	@FXML
 	AnchorPane pane3;
 	@FXML
